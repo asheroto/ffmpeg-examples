@@ -1,19 +1,19 @@
 # Commonly recommended ffmpeg arguments for video conversion using x264
 
-[Recommended arguments for CPU conversion](##Recommended-arguments-for-CPU-conversion)
+[Recommended arguments for CPU conversion](##recommended-arguments-for-cpu-conversion)
 
-[Recommended arguments for NVIDIA GPUs (faster than CPU)](##Recommended-arguments-for-NVIDIA-GPUs)
+[Recommended arguments for NVIDIA GPUs (faster than CPU)](##recommended-arguments-for-nvidia-gpus)
 
 
 [mp4 format note](##mp4-format-note)
 
-[HLS format arguments (m3u8 + ts)](##HLS-format-arguments)
+[HLS format arguments (m3u8 + ts)](##hls-format-arguments)
 
 - Tweak the video bitrate and audio bitrate simply by changing the value of 2M or 128Kbps to another appropriate value.
 - If you are targeting 1080p type quality, 2M video and 128k audio is probably fine.
 - If you are targeting 720p type quality, 1M video and 128k audio is probably fine.
 
-## Recommended arguments for CPU conversion:
+## Recommended arguments for CPU conversion
 
 |Argument|Description|
 |--|--|
