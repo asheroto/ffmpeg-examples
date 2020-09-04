@@ -1,5 +1,7 @@
 # Commonly recommended ffmpeg arguments for video conversion using x264
 
+Feel free to contribute and send pull requests!
+
 [Recommended arguments for CPU conversion](#Recommended-arguments-for-CPU-conversion)
 
 [Recommended arguments for NVIDIA GPUs (faster than CPU)](#Recommended-arguments-for-NVIDIA-GPUs)
