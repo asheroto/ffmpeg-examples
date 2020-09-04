@@ -10,12 +10,14 @@
 [HLS format arguments (m3u8 + ts)](#hls-format-arguments)
 
 - Tweak the video bitrate and audio bitrate simply by changing the value of 2M or 128Kbps to another appropriate value.
-- If you are targeting 1080p type quality, 2M video and 128k audio is probably fine.
-- If you are targeting 720p type quality, 1M video and 128k audio is probably fine.
+- If you are targeting 1080p type quality, 2M video and 128k audio is probably fine using 1920x1080 resolution.
+- If you are targeting 720p type quality, 1M video and 128k audio is probably fine using 1280x720 resolution.
 
 -----------------------------------------------------
 
 # Recommended arguments for CPU conversion
+
+This will convert the source video to a 1080p, 30fps, 2Mbps video, 128Kbps audio, output. It will strip the metadata, data streams, and subtitle streams.
 
 |Argument|Description|
 |--|--|
@@ -39,6 +41,8 @@
     
 # Recommended arguments for NVIDIA GPUs
 ### If you have an NVIDIA GPU, this is a faster way to encode vs the CPU
+
+This will convert the source video to a 1080p, 30fps, 2Mbps video, 128Kbps audio, output. It will strip the metadata, data streams, and subtitle streams.
 
 |Argument|Description|
 |--|--|
