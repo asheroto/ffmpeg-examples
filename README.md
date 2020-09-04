@@ -30,8 +30,8 @@ This will convert the source video to a 1080p, 30fps, 2Mbps video, 128Kbps audio
 |-b:v 2M|Set a bitrate of 2 Mbps for video|
 |-b:a 128k|Set a bitrate of 128 Kbps for audio|
 |-map_metadata -1|Strip metadata from source|
-|-map 0:​v:0|Use the first video stream from the source|
-|-map 0:​a:0|Use the first audio stream from the source|
+|-map 0&#8203;v:0|Use the first video stream from the source|
+|-map 0&#8203;a:0|Use the first audio stream from the source|
 |-map -0:d|Strip any data streams from the source|
 |-map -0:s|Strip any subtitle streams from the source|
 |-s 1920x1080|Set the resolution to 1920x1080 (1080p)|
@@ -57,8 +57,8 @@ This will convert the source video to a 1080p, 30fps, 2Mbps video, 128Kbps audio
 |-b:v 2M|Set a bitrate of 2 Mbps for video|
 |-b:a 128k|Set a bitrate of 128 Kbps for audio|
 |-map_metadata -1|Strip metadata from source|
-|-map 0:​v:0|Use the first video stream from the source|
-|-map 0:​a:0|Use the first audio stream from the source|
+|-map 0&#8203;v:0|Use the first video stream from the source|
+|-map 0&#8203;a:0|Use the first audio stream from the source|
 |-map -0:d|Strip any data streams from the source|
 |-map -0:s|Strip any subtitle streams from the source|
 |-s 1920x1080|Set the resolution to 1920x1080 (1080p)|
