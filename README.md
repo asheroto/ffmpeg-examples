@@ -2,12 +2,12 @@
 
 [Recommended arguments for CPU conversion](#Recommended-arguments-for-CPU-conversion)
 
-[Recommended arguments for NVIDIA GPUs (faster than CPU)](##recommended-arguments-for-nvidia-gpus)
+[Recommended arguments for NVIDIA GPUs (faster than CPU)](#Recommended-arguments-for-NVIDIA-GPUs)
 
 
-[mp4 format note](##mp4-format-note)
+[mp4 format note](#mp4-format-note)
 
-[HLS format arguments (m3u8 + ts)](##hls-format-arguments)
+[HLS format arguments (m3u8 + ts)](#hls-format-arguments)
 
 - Tweak the video bitrate and audio bitrate simply by changing the value of 2M or 128Kbps to another appropriate value.
 - If you are targeting 1080p type quality, 2M video and 128k audio is probably fine.
@@ -35,7 +35,7 @@
 
     ffmpeg -hwaccel cuda -i "input.mp4" -c:v h264_nvenc -pix_fmt yuv420p -filter:v fps=fps=30 -b:v 2M -b:a 128k -map_metadata -1 -map 0:v:0 -map 0:a:0 -map -0:d -map -0:s -s 1920x1080 -c:a aac -threads 6 "output.mp4"
     
-## Recommended arguments for NVIDIA GPUs
+# Recommended arguments for NVIDIA GPUs
 ### If you have an NVIDIA GPU, this is a faster way to encode vs the CPU
 
 |Argument|Description|
@@ -59,10 +59,10 @@
 
     ffmpeg -hwaccel cuda -i "input.mp4" -c:v h264_nvenc -pix_fmt yuv420p -filter:v fps=fps=30 -b:v 2M -b:a 128k -map_metadata -1 -map 0:v:0 -map 0:a:0 -map -0:d -map -0:s -s 1920x1080 -c:a aac -threads 6 "output.mp4"
 
-## mp4 format note
+# mp4 format note
 Using the above examples, it will convert the source video to an mp4 file.
 
-## HLS format arguments
+# HLS format arguments
 
 |Argument|Description
 |--|--|
