@@ -36,6 +36,7 @@ This will convert the source video to a 1080p, 30fps, 2Mbps video, 128Kbps audio
 |-map -0:s|Strip any subtitle streams from the source|
 |-s 1920x1080|Set the resolution to 1920x1080 (1080p)|
 |-c:a aac|Use aac format for audio (very standard)|
+|-ac 2|Convert to stereo audio (in case from 5.1, etc, MUST use for HLS format)|
 |-threads 6|Use 6 threads with ffmpeg|
 |"output.mp4"|Destination file|
 
@@ -62,6 +63,7 @@ This will convert the source video to a 1080p, 30fps, 2Mbps video, 128Kbps audio
 |-map -0:s|Strip any subtitle streams from the source|
 |-s 1920x1080|Set the resolution to 1920x1080 (1080p)|
 |-c:a aac|Use aac format for audio (very standard)|
+|-ac 2|Convert to stereo audio (in case from 5.1, etc, MUST use for HLS format)|
 |-threads 6|Use 6 threads with ffmpeg|
 |"output.mp4"|Destination file|
 
