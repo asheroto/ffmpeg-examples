@@ -13,7 +13,7 @@
 - If you are targeting 1080p type quality, 2M video and 128k audio is probably fine.
 - If you are targeting 720p type quality, 1M video and 128k audio is probably fine.
 
-#Recommended arguments for CPU conversion
+# Recommended arguments for CPU conversion
 
 |Argument|Description|
 |--|--|
