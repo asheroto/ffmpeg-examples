@@ -4,7 +4,9 @@
 Feel free to contribute and send pull requests!
 
 [Recommended arguments for CPU conversion x264](#Recommended-arguments-for-CPU-conversion-x264)
+
 [Recommended arguments for NVIDIA GPUs x264](#Recommended-arguments-for-NVIDIA-GPUs-x264)
+
 [Recommended arguments for CPU conversion x265 or HEVC](#Recommended-arguments-for-CPU-conversion-x265-or-HEVC)
 
 [mp4 format note](#mp4-format-note)
