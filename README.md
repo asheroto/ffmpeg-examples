@@ -85,6 +85,7 @@ At the current moment NVIDIA does not support a GPU-based encoder for x265/HEVC.
 |--|--|
 |-i "input.mp4"|Source file|
 |-c:v libx265|Encode the video using libx265 (CPU based)|
+|-pix_fmt yuv420p10le|Set x265 bit depth to 10-bit|
 |-filter:v fps=fps=30|Not a typo, filters the video for 30 fps|
 |-b:v 2M|Set a bitrate of 2 Mbps for video|
 |-b:a 192k|Set a bitrate of 192 Kbps for audio|
