@@ -142,7 +142,6 @@ Using the above examples, it will convert the source video to an mp4 file.
 
 |Argument|Description|
 |--|--|
-|-map 0|Recommended for some reason
 |-map_metadata -1|Don't copy metadata|
 |-metadata encoder=""|Strip encoder metadata|
 |-metadata handler_name=""|Strip handler_name metadata|
@@ -152,7 +151,7 @@ Using the above examples, it will convert the source video to an mp4 file.
 	
 **Example:**
 
-	-map 0 -map_metadata -1 -metadata encoder="" -metadata handler_name="" -metadata title="" -fflags +bitexact -empty_hdlr_name 1
+	-map_metadata -1 -metadata encoder="" -metadata handler_name="" -metadata title="" -fflags +bitexact -empty_hdlr_name 1
 
 **Full command if you just want to strip metadata and don't want to re-encode:**
 
