@@ -100,7 +100,7 @@ At the current moment NVIDIA does not support a GPU-based encoder for x265/HEVC.
 |-threads 6|Use 6 threads with ffmpeg|
 |"output.mp4"|Destination file|
 
-    ffmpeg -hwaccel cuda -i "input.mp4" -c:v hevc -pix_fmt yuv420p -filter:v fps=fps=30 -b:v 2M -b:a 192k -map_metadata -1 -map 0:v:0 -map 0:a:0 -map -0:d -map -0:s -s 1920x1080 -c:a aac -threads 6 "output.mp4"
+    ffmpeg -i "input.mp4" -c:v libx265 -pix_fmt yuv420p10le -filter:v fps=fps=30 -b:v 2M -b:a 192k -map_metadata -1 -map 0:v:0 -map 0:a:0 -map -0:d -map -0:s -s 1920x1080 -c:a aac -threads 6 "output.mp4"
 
 # Variable bit rate
 Instead of constraining the bitrate, you can have ffmpeg automatically decide based on a quality rating.
