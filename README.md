@@ -3,14 +3,15 @@
 
 Feel free to contribute and send pull requests!
 
-[Recommended arguments for CPU conversion](#Recommended-arguments-for-CPU-conversion)
-
-[Recommended arguments for NVIDIA GPUs (faster than CPU)](#Recommended-arguments-for-NVIDIA-GPUs)
-
+[Recommended arguments for CPU conversion x264](#Recommended-arguments-for-CPU-conversion-x264)
+[Recommended arguments for NVIDIA GPUs x264](#Recommended-arguments-for-NVIDIA-GPUs-x264)
+[Recommended arguments for CPU conversion x265 or HEVC](#Recommended-arguments-for-CPU-conversion-x265-or-HEVC)
 
 [mp4 format note](#mp4-format-note)
 
 [HLS format arguments (m3u8 + ts)](#hls-format-arguments)
+
+[Stripping metadata](#Stripping-metadata)
 
 - Tweak the video bitrate and audio bitrate simply by changing the value of 2M or 192 Kbps to another appropriate value.
 - If you are targeting 1080p type quality, 2M video and 192k audio is probably fine using 1920x1080 resolution.
@@ -70,7 +71,7 @@ This will convert the source video to a 1080p, 30fps, 2Mbps video, 192 Kbps audi
 
     ffmpeg -hwaccel cuda -i "input.mp4" -c:v h264_nvenc -pix_fmt yuv420p -filter:v fps=fps=30 -b:v 2M -b:a 192k -map_metadata -1 -map 0:v:0 -map 0:a:0 -map -0:d -map -0:s -s 1920x1080 -c:a aac -threads 6 "output.mp4"
     
-# Recommended arguments for CPU conversion x265/HEVC
+# Recommended arguments for CPU conversion x265 or HEVC
 
 This will convert the source video using HEVC to a 1080p, 30fps, 2Mbps video, 192 Kbps audio, output. It will strip the metadata, data streams, and subtitle streams.
 
